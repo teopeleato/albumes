@@ -5,9 +5,8 @@
     <p>Os presentamos unos cuantos discos que molan mil</p>
     <ul>
         {% for x in discosguays %}
-            <li>{{ x.titulo }} - {{ x.estilo }} - {{ x.valoracion }}</li>
+            <li><a href="disco/{{ x.id }}">{{ x.titulo }}</a></li>
         {% endfor %}
     </ul>
-    <p>Volver al <a href="/discos">Listado de dicos</a></p>
 </body>
 </html>
